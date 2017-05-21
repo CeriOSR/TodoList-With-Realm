@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Today Extension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>E0E83C5D1ED176410021663F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E0E83C761ED197460021663F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

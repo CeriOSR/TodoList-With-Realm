@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		438B0BCBC1CEBD62453C57FD /* Pods_ToDo_List_with_Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EDAE7A2FF769B31A83A751 /* Pods_ToDo_List_with_Realm.framework */; };
+		540145A0D2274D2A753FC37D /* Pods_Today_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD614FD7CCAF60FCCDE8B0F5 /* Pods_Today_Extension.framework */; };
 		E0E83C431ED176410021663F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E83C421ED176410021663F /* AppDelegate.swift */; };
 		E0E83C451ED176410021663F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E83C441ED176410021663F /* ViewController.swift */; };
 		E0E83C481ED176410021663F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E83C461ED176410021663F /* Main.storyboard */; };
@@ -14,6 +16,15 @@
 		E0E83C4D1ED176410021663F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E83C4B1ED176410021663F /* LaunchScreen.storyboard */; };
 		E0E83C581ED176410021663F /* ToDo_List_with_RealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E83C571ED176410021663F /* ToDo_List_with_RealmTests.swift */; };
 		E0E83C631ED176410021663F /* ToDo_List_with_RealmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E83C621ED176410021663F /* ToDo_List_with_RealmUITests.swift */; };
+		E0E83C711ED18D1C0021663F /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E83C701ED18D1C0021663F /* ToDoItem.swift */; };
+		E0E83C791ED197470021663F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E83C781ED197470021663F /* NotificationCenter.framework */; };
+		E0E83C7C1ED197470021663F /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E83C7B1ED197470021663F /* TodayViewController.swift */; };
+		E0E83C7F1ED197470021663F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E83C7D1ED197470021663F /* MainInterface.storyboard */; };
+		E0E83C831ED197470021663F /* Today Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E0E83C771ED197460021663F /* Today Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E0E83C8A1ED198270021663F /* SharedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E83C891ED198270021663F /* SharedFile.swift */; };
+		E0E83C8B1ED198270021663F /* SharedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E83C891ED198270021663F /* SharedFile.swift */; };
+		E0E83C8C1ED199380021663F /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E83C701ED18D1C0021663F /* ToDoItem.swift */; };
+		E0E83C8D1ED1A2150021663F /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E83C7B1ED197470021663F /* TodayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +42,35 @@
 			remoteGlobalIDString = E0E83C3E1ED176410021663F;
 			remoteInfo = "ToDo List with Realm";
 		};
+		E0E83C811ED197470021663F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0E83C371ED176410021663F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0E83C761ED197460021663F;
+			remoteInfo = "Today Extension";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E0E83C871ED197470021663F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E0E83C831ED197470021663F /* Today Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		05EDAE7A2FF769B31A83A751 /* Pods_ToDo_List_with_Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDo_List_with_Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		400AB393869E6214AAD646CE /* Pods-ToDo List with Realm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDo List with Realm.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDo List with Realm/Pods-ToDo List with Realm.release.xcconfig"; sourceTree = "<group>"; };
+		BCE10D528B49415A8BBC8436 /* Pods-Today Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Today Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Today Extension/Pods-Today Extension.release.xcconfig"; sourceTree = "<group>"; };
+		D8D1843FA13F3AEDFD8DBA81 /* Pods-Today Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Today Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Today Extension/Pods-Today Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		DABE961B56DF1FF05DC6A1E2 /* Pods-ToDo List with Realm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDo List with Realm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToDo List with Realm/Pods-ToDo List with Realm.debug.xcconfig"; sourceTree = "<group>"; };
 		E0E83C3F1ED176410021663F /* ToDo List with Realm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo List with Realm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E83C421ED176410021663F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0E83C441ED176410021663F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +84,16 @@
 		E0E83C5E1ED176410021663F /* ToDo List with RealmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ToDo List with RealmUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E83C621ED176410021663F /* ToDo_List_with_RealmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo_List_with_RealmUITests.swift; sourceTree = "<group>"; };
 		E0E83C641ED176410021663F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E83C701ED18D1C0021663F /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		E0E83C721ED195930021663F /* ToDo List with Realm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ToDo List with Realm.entitlements"; sourceTree = "<group>"; };
+		E0E83C771ED197460021663F /* Today Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Today Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E83C781ED197470021663F /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		E0E83C7B1ED197470021663F /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		E0E83C7E1ED197470021663F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		E0E83C801ED197470021663F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E83C881ED197790021663F /* Today Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Today Extension.entitlements"; sourceTree = "<group>"; };
+		E0E83C891ED198270021663F /* SharedFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedFile.swift; sourceTree = "<group>"; };
+		FD614FD7CCAF60FCCDE8B0F5 /* Pods_Today_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Today_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438B0BCBC1CEBD62453C57FD /* Pods_ToDo_List_with_Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,16 +119,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E0E83C741ED197460021663F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E83C791ED197470021663F /* NotificationCenter.framework in Frameworks */,
+				540145A0D2274D2A753FC37D /* Pods_Today_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A280D3999DCC8B226838322 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05EDAE7A2FF769B31A83A751 /* Pods_ToDo_List_with_Realm.framework */,
+				E0E83C781ED197470021663F /* NotificationCenter.framework */,
+				FD614FD7CCAF60FCCDE8B0F5 /* Pods_Today_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		604ED0B3AD4F1526737788DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DABE961B56DF1FF05DC6A1E2 /* Pods-ToDo List with Realm.debug.xcconfig */,
+				400AB393869E6214AAD646CE /* Pods-ToDo List with Realm.release.xcconfig */,
+				D8D1843FA13F3AEDFD8DBA81 /* Pods-Today Extension.debug.xcconfig */,
+				BCE10D528B49415A8BBC8436 /* Pods-Today Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E0E83C361ED176410021663F = {
 			isa = PBXGroup;
 			children = (
 				E0E83C411ED176410021663F /* ToDo List with Realm */,
 				E0E83C561ED176410021663F /* ToDo List with RealmTests */,
 				E0E83C611ED176410021663F /* ToDo List with RealmUITests */,
+				E0E83C7A1ED197470021663F /* Today Extension */,
 				E0E83C401ED176410021663F /* Products */,
+				604ED0B3AD4F1526737788DF /* Pods */,
+				5A280D3999DCC8B226838322 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +171,7 @@
 				E0E83C3F1ED176410021663F /* ToDo List with Realm.app */,
 				E0E83C531ED176410021663F /* ToDo List with RealmTests.xctest */,
 				E0E83C5E1ED176410021663F /* ToDo List with RealmUITests.xctest */,
+				E0E83C771ED197460021663F /* Today Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,12 +179,15 @@
 		E0E83C411ED176410021663F /* ToDo List with Realm */ = {
 			isa = PBXGroup;
 			children = (
+				E0E83C721ED195930021663F /* ToDo List with Realm.entitlements */,
 				E0E83C421ED176410021663F /* AppDelegate.swift */,
 				E0E83C441ED176410021663F /* ViewController.swift */,
 				E0E83C461ED176410021663F /* Main.storyboard */,
 				E0E83C491ED176410021663F /* Assets.xcassets */,
 				E0E83C4B1ED176410021663F /* LaunchScreen.storyboard */,
 				E0E83C4E1ED176410021663F /* Info.plist */,
+				E0E83C701ED18D1C0021663F /* ToDoItem.swift */,
+				E0E83C891ED198270021663F /* SharedFile.swift */,
 			);
 			path = "ToDo List with Realm";
 			sourceTree = "<group>";
@@ -125,6 +210,17 @@
 			path = "ToDo List with RealmUITests";
 			sourceTree = "<group>";
 		};
+		E0E83C7A1ED197470021663F /* Today Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E0E83C881ED197790021663F /* Today Extension.entitlements */,
+				E0E83C7B1ED197470021663F /* TodayViewController.swift */,
+				E0E83C7D1ED197470021663F /* MainInterface.storyboard */,
+				E0E83C801ED197470021663F /* Info.plist */,
+			);
+			path = "Today Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,13 +228,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0E83C671ED176410021663F /* Build configuration list for PBXNativeTarget "ToDo List with Realm" */;
 			buildPhases = (
+				C29CAF47FF2D5C31875B90E5 /* [CP] Check Pods Manifest.lock */,
 				E0E83C3B1ED176410021663F /* Sources */,
 				E0E83C3C1ED176410021663F /* Frameworks */,
 				E0E83C3D1ED176410021663F /* Resources */,
+				21DD6A609B913988331CDBCA /* [CP] Embed Pods Frameworks */,
+				3796CC84F06ABEDCF8A4287F /* [CP] Copy Pods Resources */,
+				E0E83C871ED197470021663F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E0E83C821ED197470021663F /* PBXTargetDependency */,
 			);
 			name = "ToDo List with Realm";
 			productName = "ToDo List with Realm";
@@ -181,6 +282,25 @@
 			productReference = E0E83C5E1ED176410021663F /* ToDo List with RealmUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E0E83C761ED197460021663F /* Today Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0E83C841ED197470021663F /* Build configuration list for PBXNativeTarget "Today Extension" */;
+			buildPhases = (
+				B3BBA60C78E3E7D5942B593B /* [CP] Check Pods Manifest.lock */,
+				E0E83C731ED197460021663F /* Sources */,
+				E0E83C741ED197460021663F /* Frameworks */,
+				E0E83C751ED197460021663F /* Resources */,
+				E0893A4316909B6CCDB75D02 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Today Extension";
+			productName = "Today Extension";
+			productReference = E0E83C771ED197460021663F /* Today Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,6 +315,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = AS82F53XC3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					E0E83C521ED176410021663F = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -207,6 +332,16 @@
 						DevelopmentTeam = AS82F53XC3;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E0E83C3E1ED176410021663F;
+					};
+					E0E83C761ED197460021663F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = AS82F53XC3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -226,6 +361,7 @@
 				E0E83C3E1ED176410021663F /* ToDo List with Realm */,
 				E0E83C521ED176410021663F /* ToDo List with RealmTests */,
 				E0E83C5D1ED176410021663F /* ToDo List with RealmUITests */,
+				E0E83C761ED197460021663F /* Today Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -255,7 +391,93 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E0E83C751ED197460021663F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E83C7F1ED197470021663F /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21DD6A609B913988331CDBCA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToDo List with Realm/Pods-ToDo List with Realm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3796CC84F06ABEDCF8A4287F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToDo List with Realm/Pods-ToDo List with Realm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3BBA60C78E3E7D5942B593B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C29CAF47FF2D5C31875B90E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0893A4316909B6CCDB75D02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Today Extension/Pods-Today Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E0E83C3B1ED176410021663F /* Sources */ = {
@@ -264,6 +486,9 @@
 			files = (
 				E0E83C451ED176410021663F /* ViewController.swift in Sources */,
 				E0E83C431ED176410021663F /* AppDelegate.swift in Sources */,
+				E0E83C8D1ED1A2150021663F /* TodayViewController.swift in Sources */,
+				E0E83C8A1ED198270021663F /* SharedFile.swift in Sources */,
+				E0E83C711ED18D1C0021663F /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +508,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E0E83C731ED197460021663F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E83C8B1ED198270021663F /* SharedFile.swift in Sources */,
+				E0E83C7C1ED197470021663F /* TodayViewController.swift in Sources */,
+				E0E83C8C1ED199380021663F /* ToDoItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -295,6 +530,11 @@
 			isa = PBXTargetDependency;
 			target = E0E83C3E1ED176410021663F /* ToDo List with Realm */;
 			targetProxy = E0E83C5F1ED176410021663F /* PBXContainerItemProxy */;
+		};
+		E0E83C821ED197470021663F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0E83C761ED197460021663F /* Today Extension */;
+			targetProxy = E0E83C811ED197470021663F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -313,6 +553,14 @@
 				E0E83C4C1ED176410021663F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E0E83C7D1ED197470021663F /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0E83C7E1ED197470021663F /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -415,8 +663,11 @@
 		};
 		E0E83C681ED176410021663F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DABE961B56DF1FF05DC6A1E2 /* Pods-ToDo List with Realm.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ToDo List with Realm/ToDo List with Realm.entitlements";
 				DEVELOPMENT_TEAM = AS82F53XC3;
 				INFOPLIST_FILE = "ToDo List with Realm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -428,8 +679,11 @@
 		};
 		E0E83C691ED176410021663F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 400AB393869E6214AAD646CE /* Pods-ToDo List with Realm.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ToDo List with Realm/ToDo List with Realm.entitlements";
 				DEVELOPMENT_TEAM = AS82F53XC3;
 				INFOPLIST_FILE = "ToDo List with Realm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -497,6 +751,36 @@
 			};
 			name = Release;
 		};
+		E0E83C851ED197470021663F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8D1843FA13F3AEDFD8DBA81 /* Pods-Today Extension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Today Extension/Today Extension.entitlements";
+				DEVELOPMENT_TEAM = AS82F53XC3;
+				INFOPLIST_FILE = "Today Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CeriOS.ToDo-List-with-Realm.Today-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E0E83C861ED197470021663F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCE10D528B49415A8BBC8436 /* Pods-Today Extension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Today Extension/Today Extension.entitlements";
+				DEVELOPMENT_TEAM = AS82F53XC3;
+				INFOPLIST_FILE = "Today Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CeriOS.ToDo-List-with-Realm.Today-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -516,6 +800,7 @@
 				E0E83C691ED176410021663F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0E83C6A1ED176410021663F /* Build configuration list for PBXNativeTarget "ToDo List with RealmTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +809,7 @@
 				E0E83C6C1ED176410021663F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0E83C6D1ED176410021663F /* Build configuration list for PBXNativeTarget "ToDo List with RealmUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +818,16 @@
 				E0E83C6F1ED176410021663F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0E83C841ED197470021663F /* Build configuration list for PBXNativeTarget "Today Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0E83C851ED197470021663F /* Debug */,
+				E0E83C861ED197470021663F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
